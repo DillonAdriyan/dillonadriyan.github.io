@@ -1,0 +1,11 @@
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+#album {
+  background-color: #e2edff;
+}
+footer {
+  height: 50px;
+  color: white;
+}
