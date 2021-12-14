@@ -52,7 +52,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-md-4">
           <p>
-            Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Vel neque eligendi esse doloremque maxime officia quas excepturi architecto, fugiat quia.
+            Hi, Nama saya Dillon Adriyan biasa dipanggil Dillon, Saya adalah.
           </p>
         </div>
         <div class="col-md-4">
@@ -76,7 +76,7 @@
       <div class="row">
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/1.jpg" class="card-img-top" alt="Vocational school">
+            <img src="img/album/1.jpg" class="card-img-top" alt="copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -86,7 +86,7 @@
         </div>
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/2.jpg" class="card-img-top" alt="Industrial Culture">
+            <img src="img/album/2.jpg" class="card-img-top" alt="copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -96,7 +96,7 @@
         </div>
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/3.jpg" class="card-img-top" alt="Strith Protocol ">
+            <img src="img/album/3.jpg" class="card-img-top" alt="copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -106,7 +106,7 @@
         </div>
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/4.jpg" class="card-img-top" alt="Strith Protocol ">
+            <img src="img/album/4.jpg" class="card-img-top" alt="copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -116,7 +116,7 @@
         </div>
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/5.jpg" class="card-img-top" alt="Strith Protocol ">
+            <img src="img/album/5.jpg" class="card-img-top" alt="copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -126,7 +126,7 @@
         </div>
         <div class="col-md-4 mb-2">
           <div class="card shadow-sm">
-            <img src="img/album/6.jpg" class="card-img-top" alt="Strith Protocol ">
+            <img src="img/album/6.jpg" class="card-img-top" alt="Copyright||DillonAdriyan">
             <div class="card-body">
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -149,6 +149,10 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8">
+          <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+            <strong>Terimakasih!</strong> Pesan anda sudah terkirim.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <form name="contact-dillon">
             <div class="mb-3">
               <label for="name" class="form-label">Nama</label>
@@ -162,7 +166,11 @@
               <label for="massage" class="form-label">Pesan</label>
               <textarea class="form-control" id="massage" rows="3" name="pesan"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </form>
         </div>
       </div>
@@ -181,12 +189,23 @@
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxqE3V1by7HCjSWqyCMLkiiDablI7aF8RhFHVYEu0_R-ZrIPQoioPNXncRoP5XD_wC2/exec'
     const form = document.forms['contact-dillon']
+    const btnKirim = document.querySelector('.btn-kirim')
+    const btnLoading = document.querySelector('.btn-loading')
+    const myAlert = document.querySelector('.my-alert')
 
     form.addEventListener('submit', e => {
       e.preventDefault()
+      btnLoading.classList.toggle('d-none')
+      btnKirim.classList.toggle('d-none')
       fetch(scriptURL, {
         method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        btnLoading.classList.toggle('d-none')
+        btnKirim.classList.toggle('d-none')
+        myAlert.classList.toggle('d-none')
+        form.reset();
+        console.log('Success!', response)
+      })
       .catch(error => console.error('Error!', error.message))
     })
   </script>
