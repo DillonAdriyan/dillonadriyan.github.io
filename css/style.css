@@ -1,4 +1,9 @@
 /* Style Index */
+.top-up {
+  height: 50px;
+  width: auto;
+  background-color: #e2edff;
+}
 .jumbotron {
   padding-top: 2rem;
   background-color: #e2edff;
@@ -9,6 +14,19 @@
 footer {
   height: 50px;
   color: white;
+}
+#navbar {
+  height: 50px;
+}
+.my-editing {
+  height: 40px;
+  width: auto;
+  background-color: #e2edff;
+}
+.my-about {
+  height: 40px;
+  width: auto;
+  background-color: #fff;
 }
 
 /* Style Album */
