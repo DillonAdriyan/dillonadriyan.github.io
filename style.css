@@ -1,0 +1,19 @@
+.jumbotron img {
+  width: 100px;
+  height: auto;
+}
+.container .tmbl {
+  width: 250px;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+}
+.container a {
+  text-decoration: none;
+}
+.tmbl {
+  font-size: 14px;
+}
+.dwn {
+  margin-top: -23px;
+}
