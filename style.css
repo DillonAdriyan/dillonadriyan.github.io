@@ -1,10 +1,14 @@
 .jumbotron img {
+  margin-top: 30px;
   width: 100px;
   height: auto;
 }
+.jumbotron .gambar {
+  border: 2px white solid;
+}
 .container .tmbl {
-  width: 250px;
-  height: 40px;
+  width: 350px;
+  height: 50px;
   display: block;
   margin: 20px auto;
 }
@@ -12,11 +16,22 @@
   text-decoration: none;
 }
 .tmbl {
+  padding: 10px;
   font-size: 14px;
 }
 .dwn {
+  display: block;
   margin-top: -23px;
+}
+.container .row .github {
+  font-size: 24px;
 }
 .ups {
   margin-top: -10px;
+}
+.container .wa i {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  color: white;
 }
