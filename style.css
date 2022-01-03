@@ -1,5 +1,5 @@
 .jumbotron img {
-  margin-top: 30px;
+  margin-top: 40px;
   width: 100px;
   height: auto;
 }
@@ -19,9 +19,13 @@
   padding: 10px;
   font-size: 14px;
 }
-.dwn {
+.cntr {
   display: block;
   margin-top: -23px;
+}
+.dwn {
+  display: block;
+  
 }
 .container .row .github {
   font-size: 24px;
