@@ -41,9 +41,11 @@
 }
 .wa {
   width: 150px;
-  height: auto;
+  height: 50px;
 }
-
+.medsos {
+ margin-top: -25px;
+}
 .mt-4 {
  margin-top: 1rem;
 }
