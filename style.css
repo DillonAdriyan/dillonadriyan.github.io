@@ -5,7 +5,7 @@ body {
 .jumbotron img, .jumbotron .gambar {
   margin-top: 40px;
   width: 100px;
-  height: auto;
+  height: 100px;
   border: 2px white solid;
 }
 
