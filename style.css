@@ -5,6 +5,8 @@
 }
 .jumbotron .gambar {
   border: 2px white solid;
+  width: 100px;
+  height: 100px;
 }
 .container {
  margin-right: 5px;
