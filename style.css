@@ -10,36 +10,25 @@ body {
 }
 
 .container .tmbl {
- min-height: 40px;
- min-width: 300px;
+  min-height: 40px;
+  min-width: 300px;
   width: 320px;
   height: 50px;
-  display: block;
-  margin: 20px auto;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 14px;
   /* margin-right: 8px; */
   
 }
 .container a {
   text-decoration: none;
 }
-.tmbl {
-  padding: 10px;
-  font-size: 14px;
-}
-.cntr {
-  display: block;
-  margin-top: -23px;
-}
-.dwn {
-  display: block;
-  
-}
+
+
 .container .row .github {
   font-size: 24px;
 }
-.ups {
-  margin-top: -5px;
-}
+
 .container .wa i {
   padding-top: 40px;
   padding-bottom: 10px;
