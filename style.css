@@ -1,17 +1,17 @@
-.jumbotron img {
+body {
+  background-image: url('img/bg/pattern2.svg');
+  background-size: 40%;
+}
+.jumbotron img, .jumbotron .gambar {
   margin-top: 40px;
   width: 100px;
   height: auto;
-}
-.jumbotron .gambar {
   border: 2px white solid;
-  width: 100px;
-  height: 100px;
 }
-.container {
- margin-right: 5px;
-}
+
 .container .tmbl {
+ min-height: 40px;
+ min-width: 300px;
   width: 320px;
   height: 50px;
   display: block;
@@ -61,4 +61,8 @@
 /* Custom Color */
 .sky-500 {
  background-color: #0ea5e9;
+}
+
+.container .tmbl .github {
+ font-size: 18px;
 }
