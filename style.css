@@ -6,11 +6,16 @@
 .jumbotron .gambar {
   border: 2px white solid;
 }
+.container {
+ margin-right: 5px;
+}
 .container .tmbl {
-  width: 350px;
+  width: 320px;
   height: 50px;
   display: block;
   margin: 20px auto;
+  /* margin-right: 8px; */
+  
 }
 .container a {
   text-decoration: none;
