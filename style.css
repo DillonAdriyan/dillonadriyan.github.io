@@ -55,3 +55,7 @@ body {
 .container .tmbl .github {
  font-size: 18px;
 }
+
+.col-2 {
+ height: 80px;
+}
