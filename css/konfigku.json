@@ -1,0 +1,53 @@
+{
+  "version": "5.3.0",
+  "components": [
+    {
+      "displayName": "Grid",
+      "selector": ".container, .row, .col",
+      "styles": ["grid.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Button",
+      "selector": ".btn",
+      "styles": ["buttons.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Jumbotron",
+      "selector": ".jumbotron",
+      "styles": ["jumbotron.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Text Center",
+      "selector": ".text-center",
+      "styles": ["text-center.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Margin Top",
+      "selector": ".mt-5, .mt-4",
+      "styles": ["margin.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Image",
+      "selector": ".gambar",
+      "styles": ["image.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Rounded Circle",
+      "selector": ".rounded-circle",
+      "styles": ["rounded-circle.css"],
+      "scripts": []
+    },
+    {
+      "displayName": "Shadow",
+      "selector": ".shadow",
+      "styles": ["shadow.css"],
+      "scripts": []
+    }
+  ]
+}
