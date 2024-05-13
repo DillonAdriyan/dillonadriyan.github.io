@@ -1,6 +1,5 @@
 body {
-  background-image: url('img/bg/pattern2.svg');
-  background-size: 40%;
+ background-color: #191b35;
 }
 .jumbotron img, .jumbotron .gambar {
   margin-top: 40px;
