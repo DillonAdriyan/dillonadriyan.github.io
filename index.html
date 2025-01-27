@@ -4,19 +4,19 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://dillonadriyan.me/icon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://hidillon.my.id/icon.ico" type="image/x-icon" />
   <script type="application/ld+json">
    {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Dillon Adriyan",
-    "url": "https://dillonadriyan.me/",
-    "alternateName": ["DillonAdriyan", "Dillon Corp", "dillonadriyan.me"],
+    "url": "https://hidillon.my.id/",
+    "alternateName": ["DillonAdriyan", "Dillon Corp", "dillonadriyan.id"],
     "datePublished": "2023-11-26T08:00:00+08:00",
     "dateModified": "2024-05-26T09:20:00+08:00"
    }
   </script>
-  <script>
+<!--   <script>
    (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -27,10 +27,10 @@
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
    })(window, document, "script", "dataLayer", "GTM-PB6M6X3S");
-  </script>
+  </script> -->
   <meta
    name="description"
-   content="Hello, I'm Dillon Adriyan from Indonesia. I create websites for businesses using the Bootstrap framework."
+   content="Semua orang bisa ngoding, tapi ngga semua orang bisa bikin algoritma 🤪."
   />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   <!-- AOS -->
   <!-- Google tag (gtag.js) -->
-  <script
+<!--   <script
    async
    src="https://www.googletagmanager.com/gtag/js?id=G-JF3TEPT0FH"
   ></script>
@@ -49,20 +49,20 @@
    }
    gtag("js", new Date());
    gtag("config", "G-JF3TEPT0FH");
-  </script>
+  </script> -->
   <title>Linktree</title>
  </head>
 
  <body class="body">
   <!-- Google Tag Manager (noscript) -->
-  <noscript
+<!--   <noscript
    ><iframe
     src="https://www.googletagmanager.com/ns.html?id=GTM-PB6M6X3S"
     height="0"
     width="0"
     style="display: none; visibility: hidden"
    ></iframe
-  ></noscript>
+  ></noscript> -->
   <div class="confetti">
    <div class="confetti-piece"></div>
    <div class="confetti-piece"></div>
@@ -169,5 +169,44 @@
     </div>
    </div>
   </div>
+  <script>
+    function getUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                // Kirim data lokasi ke server
+                sendLocationToServer(latitude, longitude);
+            }, function(error) {
+                console.error("Error mendapatkan lokasi: ", error);
+            });
+        } else {
+            console.log("Geolocation tidak didukung oleh browser ini.");
+        }
+    }
+
+function sendLocationToServer(latitude, longitude) {
+    fetch('https://your-pythonanywhere-domain.com/save-location/', {  // Ganti dengan URL backend PythonAnywhere
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            latitude: latitude,
+            longitude: longitude
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Lokasi berhasil dikirim ke server:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+</script>
+
  </body>
 </html>
