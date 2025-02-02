@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillon Adriyan - Web Developer</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://portfolio.dillonadriyan.me/icon.ico" type="image/x-icon">
+    <!-- Metadata SEO -->
+    <meta name="description" content="Dillon Adriyan, Web Developer yang membuat website keren dengan Python dan JavaScript">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio.dillonadriyan.me/">
+    <meta property="og:title" content="Dillon Adriyan - Web Developer">
+    <meta property="og:description" content="Pemrogram muda berbakat spesialisasi dalam pengembangan web modern">
+    <meta property="og:image" content="https://portfolio.dillonadriyan.me/img/1.webp">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dillon Adriyan - Web Developer">
+    <meta name="twitter:description" content="Pemrogram muda berbakat spesialisasi dalam pengembangan web modern">
+    <meta name="twitter:image" content="https://portfolio.dillonadriyan.me/img/1.webp">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+<header class="sticky top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="tittle w-full">
+            <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                DILLON
+            </a>
+        </div>
+
+        <!-- Nav Menu -->
+        <nav id="nav-menu" class="hidden md:flex space-x-8 items-center w-full">
+            <a href="#home" class="nav-item hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition-colors">Beranda</a>
+            <a href="#about" class="nav-item hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition-colors">Tentang</a>
+            <a href="#portfolio" class="nav-item hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition-colors">Portfolio</a>
+            <a href="#clients" class="nav-item hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition-colors">Klien</a>
+            <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                <i class="fas fa-moon text-gray-600 dark:text-gray-400"></i>
+            </button>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <button id="hamburger" class="md:hidden p-2">
+            <i class="fas fa-bars text-gray-600 dark:text-gray-400"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-nav" class="md:hidden hidden absolute top-full left-0 w-full dark:text-white shadow-lg  bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
+        <a href="#home" class="nav-item block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Beranda</a>
+        <a href="#about" class="nav-item block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Tentang</a>
+        <a href="#portfolio" class="nav-item block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Portfolio</a>
+        <a href="#clients" class="nav-item block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">Klien</a>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="img/1.webp" alt="Dillon Adriyan" class="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-blue-100 dark:border-gray-800">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 dark:text-white">
+                Hi, Saya <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Dillon Adriyan</span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                Junior Web Developer & Freelancer yang passionate dalam membangun website modern
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg hover:shadow-blue-600/30">
+                    Hubungi Saya
+                </a>
+                <a href="#portfolio" class="border-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-300 px-8 py-4 rounded-full hover:border-blue-600 transition-colors">
+                    Lihat Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-8 dark:text-white">Tentang Saya</h2>
+                <p class="text-gray-600 dark:text-gray-400 text-lg mb-6">
+                    Pemuda yang jatuh cinta dengan coding, mengubah hobi menulis sintaks menjadi pekerjaan sampingan. Menawarkan pembuatan website dengan revisi tak terbatas dan harga bersahabat.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/dllnnnnnadryn" target="_blank" class="p-3 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fab fa-instagram text-gray-600 dark:text-gray-300"></i>
+                    </a>
+                    <a href="https://github.com/DillonAdriyan" target="_blank" class="p-3 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fab fa-github text-gray-600 dark:text-gray-300"></i>
+                    </a>
+                    <a href="https://facebook.com/di.lon.7330" target="_blank" class="p-3 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fab fa-facebook text-gray-600 dark:text-gray-300"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold mb-8 dark:text-white">Tech Stack</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg flex items-center">
+                        <i class="fab fa-python text-blue-600 mr-3"></i>
+                        <span class="dark:text-white">Python</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg flex items-center">
+                        <i class="fab fa-react text-blue-400 mr-3"></i>
+                        <span class="dark:text-white">React</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg flex items-center">
+                        <i class="fab fa-js-square text-yellow-400 mr-3"></i>
+                        <span class="dark:text-white">JavaScript</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg flex items-center">
+                        <i class="fab fa-node text-green-600 mr-3"></i>
+                        <span class="dark:text-white">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Project Terbaru</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="img/portofolio/project5.jpg" alt="eLiska" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">eLiska Website</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Platform literasi siswa dengan Tailwind CSS & DaisyUI</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">Tailwind</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="img/portofolio/ecom.jpg" alt="E-commerce" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">Django E-commerce</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Platform belanja online dengan Django</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Django</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300 rounded-full text-sm">Python</span>
+                    </div>
+                </div>
+
+                <!-- Tambahkan project lainnya -->
+            </div>
+        </div>
+    </section>
+<!-- Clients Section -->
+<section id="clients" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-lg font-semibold text-blue-600 mb-2">Klien</h2>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Yang Pernah Bekerjasama</h3>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Beberapa perusahaan besar yang pernah bekerja sama dengan saya.
+            </p>
+        </div>
+
+        <!-- Client Logos -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex justify-center items-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="img/logo/google.svg" alt="Google" class="h-12 grayscale hover:grayscale-0 transition-all">
+            </div>
+            <div class="flex justify-center items-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="img/logo/gojek.svg" alt="Gojek" class="h-12 grayscale hover:grayscale-0 transition-all">
+            </div>
+            <div class="flex justify-center items-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="img/logo/amazon.svg" alt="Amazon" class="h-12 grayscale hover:grayscale-0 transition-all">
+            </div>
+            <div class="flex justify-center items-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="img/logo/microsoft.svg" alt="Microsoft" class="h-12 grayscale hover:grayscale-0 transition-all">
+            </div>
+        </div>
+
+        <!-- Lisensi -->
+        <div class="text-center mt-8 text-sm text-gray-500">
+            <p>Lisensi logo dari <a href="https://www.logo.wine/" class="text-blue-600 hover:text-blue-500">Logo.Wine</a></p>
+        </div>
+    </div>
+</section>
+<!-- Blog Section -->
+<section id="blog" class="py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-lg font-semibold text-blue-600 mb-2">Blog</h2>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Tulisan Terkini</h3>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Beberapa tulisan terbaru tentang programming, teknologi, dan gaya hidup.
+            </p>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                <img src="https://picsum.photos/600/400.webp?random=1" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Belajar Programming</a>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Panduan lengkap untuk memulai belajar programming dari dasar.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                <img src="https://picsum.photos/600/400.webp?random=2" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Review Keyboard GMMK3</a>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Review lengkap tentang keyboard mekanikal GMMK3 untuk programmer.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                <img src="https://picsum.photos/600/400.webp?random=3" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Menikmati Secangkir Kopi</a>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Cerita tentang bagaimana kopi menemani proses coding saya.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 dark:text-white">Hubungi Saya</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Nama" class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-900">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-900">
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Pesan" class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-900"></textarea>
+                    </div>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg hover:shadow-blue-600/30 w-full">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- Footer Section -->
+<footer class="bg-gray-800 dark:bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- Kontak -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-2xl font-bold text-white mb-4">Kontak</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                        dillon.adrian00@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>
+                        Jl.Raya Belik-Randudongkal km.1
+                    </li>
+                    <li>
+                        <i class="fas fa-city mr-2 text-blue-400"></i>
+                        Pemalang, Jawa Tengah
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kategori -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-2xl font-bold text-white mb-4">Kategori</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Programming</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Teknologi</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Gaya Hidup</a></li>
+                </ul>
+            </div>
+
+            <!-- Tautan Cepat -->
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-4">Tautan</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-blue-400 transition-colors">Beranda</a></li>
+                    <li><a href="#about" class="hover:text-blue-400 transition-colors">Tentang</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-400 transition-colors">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition-colors">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media & Copyright -->
+        <div class="pt-8 border-t border-gray-700">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://instagram.com/dllnnnnnadryn" target="_blank" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/DillonAdriyan" target="_blank" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://facebook.com/di.lon.7330" target="_blank" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-sm">
+                        © 2024 Dillon Adriyan. All rights reserved.
+                        <span class="block md:inline mt-2 md:mt-0">
+                            Dibuat dengan ❤️ menggunakan 
+                            <a href="https://tailwindcss.com" class="text-blue-400 hover:text-blue-300">Tailwind CSS</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Animasi untuk muncul (slideIn) *//* Animasi untuk muncul (slideIn) */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi untuk menghilang (slideOut) */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Styling untuk mobile nav */
+#mobile-nav {
+    position: absolute; /* Muncul di atas elemen lain */
+    top: 100%; /* Posisikan di bawah header */
+    left: 0;
+    width: 100%;
+ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Pastikan di atas elemen lain */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Agar animasi tidak terlihat di luar container */
+}
+
+#mobile-nav.nav-active {
+    display: block;
+}
+
+#mobile-nav .nav-item {
+    opacity: 0;
+    animation: slideIn 0.3s ease forwards;
+}
+
+/* Delay animasi untuk setiap item */
+#mobile-nav .nav-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+#mobile-nav .nav-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+#mobile-nav .nav-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+#mobile-nav .nav-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Animasi saat menu ditutup */
+#mobile-nav.nav-closing .nav-item {
+    animation: slideOut 0.3s ease forwards;
+}
+@font-face {
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(css/Poppins-SemiBold.woff) format('woff');
+}
+  body {
+    font-family: "Poppins", sans-serif;
+  }

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florist Pemalang | Buket Bunga Segar & Custom - Floralova</title>
+  <meta name="description" content="Toko bunga premium di Pemalang, Jawa Tengah. Buket segar, desain eksklusif, dan pengiriman cepat. Pesan sekarang untuk momen spesial Anda!">
+  <link rel="stylesheet" type="text/css" href="../css/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Floralova",
+    "image": "https://hidillon.my.id/icon.ico",
+    "@id": "",
+    "url": "https://hidillon.my.id.",
+    "telephone": "+6288221069818",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Mawar No. 123",
+      "addressLocality": "Pemalang",
+      "addressRegion": "Jawa Tengah",
+      "postalCode": "52361",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.9175,
+      "longitude": 109.3667
+    }
+  }
+  </script>
+  <style>
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    [data-aos] { transition-property: transform, opacity !important; }
+    /* Modal styling */
+    .modal-overlay {
+      background-color: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body class="bg-[#fff9fb] dark:bg-[#1a1a1a] transition-colors duration-300 font-poppins">
+  <!-- Navigation -->
+<header>
+  <nav class="bg-[#ffeff4]/80 dark:bg-[#2d2d2d]/80 backdrop-blur-md fixed w-full z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo / Brand -->
+        <a href="#" class="text-2xl font-playfair font-bold text-[#e83e8c] dark:text-[#ff85b3]">
+          Floralova
+        </a>
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex space-x-8 items-center dark:text-neutral-200">
+          <a href="#products" class="nav-link hover:text-[#e83e8c] dark:hover:text-[#ff85b3]">Koleksi</a>
+          <a href="#about" class="nav-link hover:text-[#e83e8c] dark:hover:text-[#ff85b3]">Tentang</a>
+          <a href="#contact" class="nav-link hover:text-[#e83e8c] dark:hover:text-[#ff85b3]">Kontak</a>
+          <!-- Tombol Checkout -->
+          <button id="checkoutBtn" class="bg-[#e83e8c] text-white px-4 py-2 rounded-lg hover:bg-[#d12d7b] transition-colors">
+            Checkout
+          </button>
+        </div>
+        <!-- Mobile Hamburger Menu -->
+        <button id="mobileMenuButton" class="lg:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-[#e83e8c] dark:text-[#ff85b3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar Menu -->
+  <div id="mobileSidebar" class="fixed inset-0 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white dark:bg-[#2d2d2d]">
+    <div class="p-4">
+      <!-- Tombol tutup sidebar -->
+      <button id="closeSidebar" class="mb-4 focus:outline-none">
+        <svg class="w-6 h-6 text-[#e83e8c] dark:text-[#ff85b3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <!-- Daftar Menu Sidebar -->
+      <nav class="flex flex-col space-y-4">
+        <a href="#products" class="nav-link block text-xl text-[#e83e8c] dark:text-[#ff85b3] hover:underline">Koleksi</a>
+        <a href="#about" class="nav-link block text-xl text-[#e83e8c] dark:text-[#ff85b3] hover:underline">Tentang</a>
+        <a href="#contact" class="nav-link block text-xl text-[#e83e8c] dark:text-[#ff85b3] hover:underline">Kontak</a>
+        <button id="mobileCheckoutBtn" class="bg-[#e83e8c] text-white px-4 py-2 rounded-lg hover:bg-[#d12d7b] transition-colors">
+          Checkout
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-playfair font-bold mb-6 text-[#2e2e2e] dark:text-white">
+        Buket Bunga Eksklusif Pemalang - Hadirkan Keindahan dalam Setiap Momen Istimewa
+      </h1>
+      <p class="text-xl text-[#666] dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+        Rangkaian Bunga Segar & Handmade oleh Florist Profesional. Pesan Sekarang, Antar ke Seluruh Pemalang & Sekitar!
+      </p>
+      <button class="bg-[#e83e8c] text-white px-8 py-3 rounded-lg hover:bg-[#d12d7b] transition-colors">
+        Pesan Sekarang – Gratis Kartu Ucapan!
+      </button>
+    </div>
+    
+    <!-- Image Slider -->
+    <div class="swiper mySwiper max-w-4xl mx-auto mt-12" data-aos="zoom-in">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/buket/1.jpg" 
+               alt="Buket Pernikahan Eksklusif Pemalang" 
+               class="w-full h-96 object-cover rounded-3xl shadow-xl">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/buket/random/1.jpg" 
+               alt="Buket Pernikahan Eksklusif Pemalang" 
+               class="w-full h-96 object-cover rounded-3xl shadow-xl">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/buket/random/3.jpg" 
+               alt="Buket Pernikahan Eksklusif Pemalang" 
+               class="w-full h-96 object-cover rounded-3xl shadow-xl">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/buket/random/5.jpg" 
+               alt="Buket Pernikahan Eksklusif Pemalang" 
+               class="w-full h-96 object-cover rounded-3xl shadow-xl">
+        </div>
+        <!-- Add more slides jika diperlukan -->
+      </div>
+      <div class="swiper-pagination fill-pink-500"></div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-white dark:bg-[#2d2d2d]" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-playfair font-bold mb-12 text-center text-[#2e2e2e] dark:text-white">
+        Koleksi Buket
+      </h2>
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Dynamic content loaded from JS -->
+      </div>
+      <h3 class="text-sm text-orange-500 mt-6">* Disclaimer Semua Foto yang tertera adalah contoh, semua hak cipta gambar dari <a href="https://pinterest.com" class="underline font-semibold text-red-500">
+      Pinterest
+      </a>
+      </h3>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-[#fdeff2] dark:bg-[#383838]" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div class="relative">
+        <img src="img/buket/8db7b05524122fecbea7c20e4b6eb4b5.jpg" 
+             alt="Workshop Florist Pemalang" 
+             class="rounded-3xl shadow-xl">
+      </div>
+      <div>
+        <h2 class="text-3xl font-playfair font-bold mb-6 dark:text-white">Floralova: Seni Merangkai Kebahagiaan Sejak 2020</h2>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          Sebagai pelopor <strong>toko bunga premium di Pemalang</strong>, Floralova menghadirkan buket bunga dengan kualitas tertinggi. 
+          Menggunakan kombinasi bunga lokal Pemalang dan import pilihan, setiap rangkaian dibuat oleh 
+          <strong>florist profesional Jawa Tengah</strong> untuk pernikahan, ulang tahun, anniversary, hingga momen duka.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white dark:bg-[#2d2d2d]" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold mb-12 text-center dark:text-white">Pertanyaan Umum</h2>
+      <div class="space-y-4">
+        <div class="faq-item bg-[#fdeff2] dark:bg-[#383838] p-6 rounded-2xl cursor-pointer">
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold dark:text-white">Apa wilayah pengantaran Floralova?</h3>
+            <span class="toggle-icon text-[#e83e8c]">▼</span>
+          </div>
+          <p class="answer hidden mt-4 text-gray-600 dark:text-gray-300">
+            Kami melayani pengiriman ke seluruh <strong>Pemalang, Tegal, Pekalongan</strong>, dan sekitarnya.
+          </p>
+        </div>
+        <!-- Add more FAQ items jika diperlukan -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div class="bg-[#fdeff2] dark:bg-[#383838] p-8 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-playfair font-bold mb-6 dark:text-white">Lokasi Kami</h3>
+        <div class="space-y-5">
+          <div class="flex items-center text-[#666] dark:text-gray-300">
+            📍 Jl. Mawar No. 123, Pemalang, Jawa Tengah
+          </div>
+          <div class="flex items-center cursor-pointer hover:text-[#e83e8c] transition-colors" 
+               onclick="window.open('https://wa.me/6281234567890')">
+            💌 Chat via WhatsApp
+          </div>
+          <div class="mt-6 h-64 bg-white rounded-xl overflow-hidden shadow-inner">
+            <iframe src="https://www.google.com/maps/embed?pb=..." 
+                    class="w-full h-full" 
+                    title="Peta Lokasi Florist Pemalang"
+                    style="border:0;"></iframe>
+          </div>
+        </div>
+      </div>
+      <form class="bg-white dark:bg-[#383838] p-8 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-playfair font-bold mb-6 dark:text-white">Konsultasi Florist</h3>
+        <div class="space-y-5">
+          <input type="text" placeholder="Nama Anda" 
+                 class="w-full p-3 border-2 border-[#eee] rounded-xl focus:outline-none focus:border-[#e83e8c] dark:bg-[#2d2d2d]">
+          <input type="tel" placeholder="Nomor WhatsApp" 
+                 class="w-full p-3 border-2 border-[#eee] rounded-xl focus:outline-none focus:border-[#e83e8c] dark:bg-[#2d2d2d]">
+          <textarea rows="4" placeholder="Deskripsi Pesanan..." 
+                    class="w-full p-3 border-2 border-[#eee] rounded-xl focus:outline-none focus:border-[#e83e8c] dark:bg-[#2d2d2d]"></textarea>
+          <button class="w-full bg-[#e83e8c] text-white py-3 rounded-xl hover:bg-[#d12d7b] transition-colors">
+            Kirim Pesan
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal Checkout -->
+  <div id="checkoutModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+    <div class="modal-overlay absolute inset-0"></div>
+    <div class="bg-white dark:bg-[#383838] relative p-8 rounded-2xl shadow-2xl w-11/12 max-w-lg mx-auto z-10">
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300 hover:text-[#e83e8c]">&times;</button>
+      <h2 class="text-2xl font-playfair font-bold mb-4 text-[#e83e8c]">Checkout</h2>
+      <p class="mb-6 text-gray-700 dark:text-gray-300">Ini adalah contoh pop up checkout. Tambahkan ringkasan produk dan form pembayaran sesuai kebutuhan.</p>
+      <button class="w-full bg-[#e83e8c] text-white py-3 rounded-xl hover:bg-[#d12d7b] transition-colors">
+        Lanjutkan Pembayaran
+      </button>
+    </div>
+  </div>
+<footer class="pt-24 pb-12">
+  <div class="w-full border-t-gray-500 text-center text-neutral-500">
+    <p>Made With ❤️ <span class="font-semibold"></span>Dillon Adriyan</p>
+    <span>©2025 || Dillon </span>
+  </div>
+</footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const products = [
+      {
+        category: "Buket Romantis",
+        items: [
+          {
+            name: "Buket Eternal Harmony",
+            price: "Rp 450.000 - Rp 750.000",
+            desc: "Kombinasi mawar merah premium, gypsophila, dan eucalyptus segar. Tersedia dalam ukuran medium (30cm) dan large (50cm).",
+            image: "img/buket/romance/1.jpg",
+            alt: "Buket Anniversary Romantis Pemalang"
+          },
+          {
+            name: "Buket Serenade of Love",
+            price: "Rp 550.000",
+            desc: "Paduan mawar pink, ranunculus, dan daun silver dollar dengan mini LED fairy lights untuk kesan romantis malam hari.",
+            image: "img/buket/romance/2.jpg",
+            alt: "Buket Tunangan Eksklusif Jawa Tengah"
+          },
+          {
+            name: "Buket Blushing Garden",
+            price: "Rp 600.000",
+            desc: "Bunga peony impor, spray roses, dan aksen kepingan emas. Pakai vase kristal reusable (opsional).",
+            image: "img/buket/romance/3.jpg",
+            alt: "Buket Blushing Garden Romantis"
+          }
+        ]
+      },
+      {
+        category: "Buket Ulang Tahun",
+        items: [
+          {
+            name: "Buket Joyful Celebration",
+            price: "Rp 400.000",
+            desc: "Gerbera, krisan, dan lisianthus dengan balon mini.",
+            image: "img/buket/birthday/1.jpg",
+            alt: "Buket Ulang Tahun Pemalang"
+          },
+          {
+            name: "Buket Golden Sunshine",
+            price: "Rp 500.000",
+            desc: "Bunga matahari, solidago, dan baby’s breath dalam kotak kayu rustic. Bonus coklat artisan lokal 'Kampoeng Coklat Pemalang'.",
+            image: "img/buket/birthday/2.jpg",
+            alt: "Buket Ulang Tahun dengan Coklat Artisan"
+          },
+          {
+            name: "Buket Pastel Whispers",
+            price: "Rp 550.000",
+            desc: "Rangkaian roses pastel (lavender, peach, blush) untuk wanita penyuka estetika minimalis.",
+            image: "img/buket/birthday/3.jpg",
+            alt: "Buket Ulang Tahun Minimalis"
+          }
+        ]
+      },
+      {
+        category: "Buket Pernikahan",
+        items: [
+          {
+            name: "Buket Bridal Elegance",
+            price: "Rp 650.000",
+            desc: "Lily putih, hydrangea, dan baby’s breath.",
+            image: "img/buket/wedding/1.jpg",
+            alt: "Buket Pernikahan Elegan"
+          },
+          {
+            name: "Buket Royal Cascade",
+            price: "Rp 750.000",
+            desc: "Gaya cascading dengan anggrek putih, ivy, dan stephanotis. Custom pita warna champagne atau dusty blue.",
+            image: "img/buket/wedding/2.jpg",
+            alt: "Buket Pernikahan Cascade"
+          },
+          {
+            name: "Buket Vintage Romance",
+            price: "Rp 700.000",
+            desc: "Mawar garden cream, dried lavender, dan biji-biji kopi Pemalang sebagai aromaterapi.",
+            image: "img/buket/wedding/3.jpg",
+            alt: "Buket Pernikahan Vintage"
+          }
+        ]
+      },
+      {
+        category: "Buket Spesial",
+        items: [
+          {
+            name: "Buket White Serenity",
+            price: "Rp 500.000",
+            desc: "Lily putih, krisan putih, dan eucalyptus hijau. Dikirim dengan kartu ucapan berkaligrafi.",
+            image: "img/buket/random/2.jpg",
+            alt: "Buket Spesial White Serenity"
+          },
+          {
+            name: "Buket Eternal Peace",
+            price: "Rp 520.000",
+            desc: "Bunga anyelir putih, gypsophila, dan daun olive. Packaging kain krem ramah lingkungan.",
+            image: "img/buket/random/4.jpg",
+            alt: "Buket Duka Eternal Peace"
+          }
+        ]
+      },
+      {
+        category: "Buket Graduation",
+        items: [
+          {
+            name: "Buket Bright Future",
+            price: "Rp 480.000",
+            desc: "Bunga aster ungu, delphinium biru, dan pita bertuliskan 'Congrats Grad!'.",
+            image: "img/buket/graduate/1.jpg",
+            alt: "Buket Wisuda Bright Future"
+          },
+          {
+            name: "Buket Scholar’s Pride",
+            price: "Rp 520.000",
+            desc: "Bunga mawar kuning, sunflower, dan mini topi graduation. Bonus voucher buku senilai Rp50.000 (kolaborasi dengan toko buku lokal).",
+            image: "img/buket/graduate/2.jpg",
+            alt: "Buket Wisuda Scholar's Pride"
+          }
+        ]
+      },
+      {
+        category: "Buket Corporate",
+        items: [
+          {
+            name: "Buket Executive Charm",
+            price: "Rp 800.000",
+            desc: "Anggrek dendrobium, monstera leaf, dan batang bambu dalam pot modern. Cocok untuk grand opening atau ucapan terima kasih klien.",
+            image: "img/buket/corporate/1.jpg",
+            image: "img/buket/corporate/1.jpg",
+            alt: "Buket Corporate Executive Charm"
+          },
+          {
+            name: "Buket Luxury Succulent Box",
+            price: "Rp 850.000",
+            desc: "Tanaman sukulen langka + kaktus mini dalam kotak kayu engrave. Low maintenance, tahan hingga 1 bulan.",
+            image: "img/buket/corporate/2.jpg",
+            alt: "Buket Corporate Luxury Succulent Box"
+          }
+        ]
+      }
+    ];
+
+    // Dynamic Product Loading
+    const productGrid = document.getElementById('productGrid');
+    products.forEach((category) => {
+      // Tambahkan judul kategori
+      productGrid.innerHTML += `
+        <div class="sm:col-span-2 lg:col-span-4">
+          <h3 class="text-2xl font-playfair font-bold mt-12 mb-6 text-[#e83e8c] border-l-4 border-[#e83e8c] pl-4">
+            ${category.category}
+          </h3>
+        </div>
+      `;
+      // Tambahkan produk dalam kategori
+      category.items.forEach(item => {
+        productGrid.innerHTML += `
+          <div class="product-card bg-white dark:bg-[#383838] p-6 rounded-2xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-2">
+            <img src="${item.image}" 
+                 alt="${item.alt}"
+                 class="w-full h-64 object-cover rounded-xl mb-4" loading="lazy">
+            <h4 class="text-xl font-semibold dark:text-white">${item.name}</h4>
+            <p class="text-gray-600 dark:text-gray-300 my-3 text-sm">${item.desc}</p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-[#e83e8c] font-bold">${item.price}</p>
+              <button class="bg-[#e83e8c] text-white px-4 py-2 rounded-lg hover:bg-[#d12d7b] transition-colors"
+                      onclick="showWAForm('${item.name}')">
+                Pesan via WA
+              </button>
+            </div>
+          </div>
+        `;
+      });
+    });
+
+    // WhatsApp Order Function
+    function showWAForm(productName) {
+      const phoneNumber = '6281234567890';
+      const message = `Halo Floralova, saya ingin memesan ${productName}. Bisa bantu info ketersediaan dan detailnya?`;
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.querySelector('.answer');
+        answer.classList.toggle('hidden');
+      });
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper(".mySwiper", {
+      pagination: { el: ".swiper-pagination", clickable: true },
+      loop: true,
+      autoplay: { delay: 5000 },
+    });
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 120
+    });
+
+    // Modal Checkout Functionality
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const mobileCheckoutBtn = document.getElementById('mobileCheckoutBtn');
+    const checkoutModal = document.getElementById('checkoutModal');
+    const closeModal = document.getElementById('closeModal');
+
+    checkoutBtn.addEventListener('click', () => {
+      checkoutModal.classList.remove('hidden');
+    });
+    mobileCheckoutBtn.addEventListener('click', () => {
+      checkoutModal.classList.remove('hidden');
+    });
+    closeModal.addEventListener('click', () => {
+      checkoutModal.classList.add('hidden');
+    });
+
+    // Tutup modal jika klik di luar konten
+    checkoutModal.addEventListener('click', (e) => {
+      if(e.target === checkoutModal) {
+        checkoutModal.classList.add('hidden');
+      }
+    });
+  </script>
+  <!-- Script untuk toggle sidebar mobile -->
+<script>
+  const mobileMenuButton = document.getElementById('mobileMenuButton');
+  const mobileSidebar = document.getElementById('mobileSidebar');
+  const closeSidebar = document.getElementById('closeSidebar');
+
+  // Buka sidebar ketika tombol hamburger diklik
+  mobileMenuButton.addEventListener('click', () => {
+    mobileSidebar.classList.remove('-translate-x-full');
+  });
+
+  // Tutup sidebar ketika tombol tutup diklik
+  closeSidebar.addEventListener('click', () => {
+    mobileSidebar.classList.add('-translate-x-full');
+  });
+
+  // Opsi: Tutup sidebar jika klik di luar menu (pada area sidebar)
+  mobileSidebar.addEventListener('click', (e) => {
+    if(e.target === mobileSidebar) {
+      mobileSidebar.classList.add('-translate-x-full');
+    }
+  });
+</script>
+</body>
+</html>
