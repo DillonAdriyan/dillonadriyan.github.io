@@ -1,0 +1,70 @@
+
+    @font-face {
+      font-family: 'Poppins';
+      src: url(Poppins-SemiBold.woff);
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Container teks animasi */
+    #text-container {
+      /* Container utama untuk teks statis dan dinamis */
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    /* Container khusus untuk teks dinamis */
+    .animated-text-container {
+      position: relative;
+      overflow: hidden;
+      /* Sesuaikan tinggi dan line-height sesuai ukuran font yang digunakan */
+      height: 1.2em;
+      line-height: 1.2em;
+    }
+    /* Styling dasar untuk elemen teks dinamis */
+    
+  .animated-text {
+  opacity: 0;
+  position: relative ;
+
+}
+
+.animated-text.current {
+  z-index: 2;
+  opacity: 1;
+}
+.animated-text.next {
+  z-index: 1;
+  opacity: 0; /* Tersembunyi sampai dipakai */
+}
+
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slideOut {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    }
+  

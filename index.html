@@ -1,212 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="https://hidillon.my.id/icon.ico" type="image/x-icon" />
   <script type="application/ld+json">
-   {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Dillon Adriyan",
-    "url": "https://hidillon.my.id/",
-    "alternateName": ["DillonAdriyan", "Dillon Corp", "dillonadriyan.id"],
-    "datePublished": "2023-11-26T08:00:00+08:00",
-    "dateModified": "2024-05-26T09:20:00+08:00"
-   }
+  {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dillon Adriyan",
+      "url": "https://hidillon.my.id/",
+      "alternateName": ["DillonAdriyan", "Dillon Corp", "dillonadriyan.id"],
+      "datePublished": "2023-11-26T08:00:00+08:00",
+      "dateModified": "2024-05-26T09:20:00+08:00"
+  }
   </script>
-<!--   <script>
-   (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-     j = d.createElement(s),
-     dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-   })(window, document, "script", "dataLayer", "GTM-PB6M6X3S");
-  </script> -->
-  <meta
-   name="description"
-   content="Semua orang bisa ngoding, tapi ngga semua orang bisa bikin algoritma 🤪."
-  />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/anim.css" />
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  <!-- AOS -->
-  <!-- Google tag (gtag.js) -->
-<!--   <script
-   async
-   src="https://www.googletagmanager.com/gtag/js?id=G-JF3TEPT0FH"
-  ></script>
+  <meta name="description" content="Semua orang bisa ngoding, tapi ngga semua orang bisa bikin algoritma 🤪." />
+  <title>Linktree - Dillon Adriyan</title>
+  <!-- Sertakan Tailwind CSS via CDN -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/custom.css"> 
+  <!-- Sertakan Google Fonts: Inter -->
+
+  <!-- Custom CSS -->
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header / Linktree Section -->
+  <header class="min-h-screen flex flex-col items-center justify-center px-4">
+    <img src="img/1.webp" alt="Dillon" class="rounded-full w-28 h-28 shadow-xl mb-4 border-4 border-gray-200" />
+    <h1 class="text-4xl font-bold mb-1">Dillon Adriyan</h1>
+    
+    <!-- Container untuk teks statis dan dinamis -->
+    <div id="text-container">
+      <h2 class="text-sm">JuniorWebDev |</h2>
+      <!-- Container khusus untuk animasi teks dinamis -->
+      <div class="animated-text-container">
+        <!-- Elemen pertama tampil sebagai teks awal (current) -->
+        <p class="animated-text current text-sm">Text Pertama</p>
+        <!-- Elemen kedua sebagai cadangan untuk teks selanjutnya (next) -->
+        <p class="animated-text next text-sm"></p>
+      </div>
+    </div>
+    
+    <p class="text-md mt-2 mb-8 text-center max-w-md">
+      Semua orang bisa ngoding, tapi ngga semua orang bisa bikin algoritma 🤪.
+    </p>
+
+    <!-- Social Media Links -->
+    <div class="flex space-x-4 mb-8">
+      <a href="https://wa.me/+6288221069818" aria-label="WhatsApp" class="p-3 bg-green-400 rounded-full hover:bg-green-200 transition duration-300">
+        <img src="img/logo/wa.svg" alt="WhatsApp" class="w-6 h-6" />
+      </a>
+      <a href="https://instagram.com/dllnadryn" aria-label="Instagram" class="p-3 bg-pink-400 rounded-full hover:bg-pink-200 transition duration-300">
+        <img src="img/logo/ig.svg" alt="Instagram" class="w-6 h-6" />
+      </a>
+      <a href="mailto:dillon.adrian00@gmail.com" aria-label="Email" class="p-3 bg-red-400 rounded-full hover:bg-red-200 transition duration-300">
+        <img src="img/sms.png" alt="Email" class="w-6 h-6" />
+      </a>
+    </div>
+
+    <!-- Link Buttons -->
+    <div class="w-full max-w-md space-y-4">
+      <a href="https://github.com/DillonAdriyan/" class="block bg-white text-gray-800 text-center py-3 rounded-lg shadow hover:bg-gray-100 transition duration-300">Github</a>
+      <a href="https://dillonadriyan.studio" class="block bg-white text-gray-800 text-center py-3 rounded-lg shadow hover:bg-gray-100 transition duration-300">Studio</a>
+      <a href="https://dillonadriyan.github.io/new-portfolio/" class="block bg-white text-gray-800 text-center py-3 rounded-lg shadow hover:bg-gray-100 transition duration-300">Portfolio (NEW)</a>
+      <a href="https://dillonadriyan.github.io/design/bouqet" class="block bg-white text-gray-800 text-center py-3 rounded-lg shadow hover:bg-gray-100 transition duration-300">Design</a>
+    </div>
+
+    <!-- Penunjuk untuk scroll -->
+    <div class="mt-12">
+      <a href="#productCatalog">
+      <p class="text-sm text-gray-500 animate-bounce">Scroll to see catalog</p>
+      </a>
+    </div>
+  </header>
+
+  <!-- Product Catalog Section (disembunyikan awalnya dengan opacity-0) -->
+  <section id="productCatalog" class="bg-white py-12 opacity-0 transition ease-in-out duration-1000">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Katalog Produk</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow transition transform hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Product 1" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Produk 1</h3>
+          <p class="text-gray-700 mb-4">Deskripsi singkat tentang produk 1.</p>
+          <button class="bg-blue-100 text-blue-800 py-2 px-4 rounded-lg hover:bg-blue-200 transition duration-300">Lihat Detail</button>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow transition transform hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Product 2" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Produk 2</h3>
+          <p class="text-gray-700 mb-4">Deskripsi singkat tentang produk 2.</p>
+          <button class="bg-blue-100 text-blue-800 py-2 px-4 rounded-lg hover:bg-blue-200 transition duration-300">Lihat Detail</button>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow transition transform hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Product 3" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Produk 3</h3>
+          <p class="text-gray-700 mb-4">Deskripsi singkat tentang produk 3.</p>
+          <button class="bg-blue-100 text-blue-800 py-2 px-4 rounded-lg hover:bg-blue-200 transition duration-300">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-700 py-6">
+    <div class="container mx-auto text-center fade-in-up">
+      <p>&copy; 2024 Dillon Adriyan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript untuk animasi muncul saat scroll -->
   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag() {
-    dataLayer.push(arguments);
-   }
-   gtag("js", new Date());
-   gtag("config", "G-JF3TEPT0FH");
-  </script> -->
-  <title>Linktree</title>
- </head>
-
- <body class="body">
-  <!-- Google Tag Manager (noscript) -->
-<!--   <noscript
-   ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-PB6M6X3S"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-   ></iframe
-  ></noscript> -->
-  <div class="confetti">
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-   <div class="confetti-piece"></div>
-
-   <div class="jumbotron text-center">
-    <img
-     src="img/1.webp"
-     alt="Dillon"
-     class="rounded-circle gambar shadow"
-     width="100"
-     height="100"
-    />
-    <h1 class="hero-title mt-4 text-white">Dillon Adriyan</h1>
-   </div>
-   <div class="container text-center">
-    <div class="row justify-content-center medsos">
-     <div class="col-2">
-      <a href="https://wa.me/+6288221069818" aria-label="WhatsApp">
-       <span class="wa shadow what">
-        <img src="img/logo/wa.svg" alt="wadillon" height="25" width="25" />
-       </span>
-      </a>
-     </div>
-     <div class="col-2">
-      <a href="https://instagram.com/dllnadryn" aria-label="Instagram">
-       <span class="wa shadow ig">
-        <img src="img/logo/ig.svg" alt="wadillon" height="25" width="25" />
-       </span>
-      </a>
-     </div>
-     <div class="col-2">
-      <a
-       href="https://api1.linkr.bio/callbacks/go?url=mailto%3Adillon.adrian00%40gmail.com&hash=7EjBBBME&type=4&id=K8lWxADE"
-       aria-label="Gmail"
-      >
-       <span class="wa shadow mail">
-        <img src="img/sms.png" alt="sms" height="25" width="25" />
-       </span>
-      </a>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col">
-      <a href="https://github.com/DillonAdriyan/"
-       ><button name="github" class="btn btn-light tmbl shadow" type="button">
-        <p class="github">Github</p>
-       </button>
-      </a>
-     </div>
-     <div class="col">
-      <a href="https://dillonadriyan.studio"
-       ><button class="btn btn-light tmbl shadow" name="ELiska" type="button">
-        <p>Studio</p>
-       </button>
-      </a>
-     </div>
-     <div class="col">
-      <a href="https://dillonadriyan.github.io/new-portfolio/"
-       ><button
-        class="btn btn-light tmbl shadow"
-        name="Portofolio"
-        type="button"
-       >
-        <p>Portfolio (NEW)</p>
-       </button>
-      </a>
-     </div>
-     <div class="col">
-      <a href="https://dillonadriyan.github.io/design/bouqet"
-       ><button class="btn btn-light tmbl shadow" type="button">
-        <p>Design</p>
-       </button>
-      </a>
-     </div>
-    </div>
-
-    <div class="foot">
-     <p class="text">©</p>
-     <p class="text">D</p>
-     <p class="text">i</p>
-     <p class="text">l</p>
-     <p class="text">l</p>
-     <p class="text">o</p>
-     <p class="text">n</p>
-     <p class="text"></p>
-     <p class="text">A</p>
-     <p class="text">d</p>
-     <p class="text">r</p>
-     <p class="text">i</p>
-     <p class="text">y</p>
-     <p class="text">a</p>
-     <p class="text">n</p>
-    </div>
-   </div>
-  </div>
-  <script>
-    function getUserLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
-
-                // Kirim data lokasi ke server
-                sendLocationToServer(latitude, longitude);
-            }, function(error) {
-                console.error("Error mendapatkan lokasi: ", error);
-            });
-        } else {
-            console.log("Geolocation tidak didukung oleh browser ini.");
-        }
-    }
-
-function sendLocationToServer(latitude, longitude) {
-    fetch('https://your-pythonanywhere-domain.com/save-location/', {  // Ganti dengan URL backend PythonAnywhere
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            latitude: latitude,
-            longitude: longitude
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Lokasi berhasil dikirim ke server:', data);
-    })
-    .catch((error) => {
-        console.error('Error:', error);
+    document.addEventListener('DOMContentLoaded', () => {
+      const catalogSection = document.getElementById('productCatalog');
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            catalogSection.classList.add('fade-in-up');
+            catalogSection.style.opacity = 1;
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      observer.observe(catalogSection);
     });
+  </script>
+
+  <!-- JavaScript untuk animasi teks dinamis -->
+  <script>// Array teks yang akan ditampilkan
+const texts = [
+  "Engineer",
+  "Automotive",
+  "Editing",
+  "Programming",
+  "Photography"
+];
+
+let currentIndex = 0;
+
+// Pilih elemen teks untuk current dan next
+let currentTextElem = document.querySelector('.animated-text.current');
+let nextTextElem = document.querySelector('.animated-text.next');
+
+const animationDuration = 400; // Durasi animasi dalam milidetik
+
+// Inisialisasi teks awal
+currentTextElem.textContent = texts[currentIndex];
+nextTextElem.textContent = texts[(currentIndex + 1) % texts.length];
+
+function changeText() {
+  // Tentukan indeks untuk teks selanjutnya
+  const nextIndex = (currentIndex + 1) % texts.length;
+  
+  // Masukkan teks berikutnya ke elemen next
+  nextTextElem.textContent = texts[nextIndex];
+  
+  // Mulai animasi: current slide out, next slide in
+  currentTextElem.classList.add('slide-out');
+  nextTextElem.classList.add('slide-in');
+  
+  // Setelah animasi selesai, lakukan swap peran
+  setTimeout(() => {
+    // Bersihkan kelas animasi
+    currentTextElem.classList.remove('slide-out');
+    nextTextElem.classList.remove('slide-in');
+    
+    // Pastikan currentTextElem tersembunyi (opacity 0) dan berada di belakang
+    currentTextElem.style.opacity = '0';
+    currentTextElem.classList.remove('current');
+    currentTextElem.classList.add('next');
+    
+    // Tampilkan nextTextElem sebagai teks yang aktif
+    nextTextElem.style.opacity = '1';
+    nextTextElem.classList.remove('next');
+    nextTextElem.classList.add('current');
+    
+    // Tukar referensi elemen
+    const temp = currentTextElem;
+    currentTextElem = nextTextElem;
+    nextTextElem = temp;
+    
+    // Update indeks teks saat ini
+    currentIndex = nextIndex;
+  }, animationDuration);
 }
 
+// Jalankan pergantian teks setiap 3 detik
+setInterval(changeText, 1300);
 </script>
-
- </body>
+</body>
 </html>
